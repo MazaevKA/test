@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    color: #7d7e7e;
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    border: 7px solid #ebebeb;
+    padding: 15px;
+}
+.plan {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    cursor: pointer;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+.active {
+    background-color: #ebf4f7;
+    border: 1px solid #cde2ea;
+}
+.license {
+    font-family: 'BebasNeue-Regular';
+    margin-left: -90px;
+
+}
+.real-radio {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -1;
+}
+.custom-radio {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    background-color: #fbfbfb;
+    border: 3px solid #dadada;
+    border-radius: 50%;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.custom-radio::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 9px;
+    height: 9px;
+    background-color: #0294bf;
+    border-radius: 50%;
+    display: none;
+}
+.real-radio:checked + .custom-radio::before {
+	display: block;
+	transform: translate(-50%, -50%) scale(1);
+}
+.real-radio:focus + .custom-radio {
+	border: 3px solid #437097;
+}
+.real-radio:checked + .custom-radio {
+	border: 3px solid #437097;
+    transition: border .3s ease-in;
+}
+.select-licenses {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+.select-licenses > span {
+    display: flex;
+    padding-right: 10px;
+    font-size: 12px;
+    align-items: center;
+}
+select:focus {
+    outline-color: #0294bf;
+}
+.total-price {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    line-height: 2.6;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #0294bf;
+}
+.price {
+    color: #7d7e7e;
+    font-weight: 600;
+}
+sup {
+    text-transform: none;
+}
+button {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    background-color: #33a845;
+    color: #fff;
+    font-size: 11px;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: auto;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.license-plan {
+    display: flex;
+    justify-content: center;
+    color: #0294bf;
+    font-size: 12px;
+}

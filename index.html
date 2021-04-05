@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/BebasNeue-Regular.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Test</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="card-wrapper">
+            <form class="form" action="#" name="form">
+                <label class="plan active">
+                    <input type="radio" class="real-radio" name="value" value="Selected plan: #1" data-value="13" checked>
+                    <span class="custom-radio"></span><span class="license">LICENSE PLAN #1</span> <span class='price'>$13 per license</span>
+                </label>
+                <label class="plan">
+                    <input type="radio" class="real-radio" name="value" value="Selected plan: #2" data-value="22">
+                    <span class="custom-radio"></span><span class="license">LICENSE PLAN #2</span> <span class='price'>$22 per license</span>
+                </label>
+                <label class="plan">
+                    <input type="radio" class="real-radio" name="value" value="Selected plan: #3" data-value="34">
+                    <span class="custom-radio"></span><span class="license">LICENSE PLAN #3</span> <span class='price'>$34 per license</span>
+                </label>
+
+                <label class="select-licenses">
+                    <span>Number of licenses:</span>
+                   <select class="select-number">
+                       <option value="1">1</option>
+                       <option value="2">2</option>
+                       <option value="3">3</option>
+                       <option value="4">4</option>
+                       <option value="5">5</option>
+                       <option value="6">6</option>
+                       <option value="7">7</option>
+                       <option value="8">8</option>
+                       <option value="9">9</option>
+                       <option value="10">10</option>
+                   </select>
+                </label>
+                
+                <div class="total-price">
+                    <span class="price">total:</span> $<span class="total">13</span><sup>us</sup>
+                </div>
+
+                <button type="submit">BUY NOW</button>
+
+                <div class="license-plan">
+                    Selected plan: #1
+                </div>
+                
+                
+            </form>
+        </div>
+    </div>
+    
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
